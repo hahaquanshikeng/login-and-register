@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/register.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<style>
+	</style>
+</head>
+<body>
+	<canvas id="paint"></canvas>
+	<div>
+		<img src="img/max_logo3.png" class="login-logo">
+	</div>
+	<div class="mid-one show">
+		<div class="mid-one-title">请输入注册信息</div>
+		<form id="form1">
+			<div class="title for-uname">用户名</div>
+			<input type="text" name="uname" class="uname all-input" placeholder="请输入3-10位以内文字数字或下划线"/><span class="span-for-uname"></span>
+			<div class="title for-pnumber">手机号</div>
+			<input type="text" name="pnumber" class="pnumber all-input" placeholder="请输入11位手机号"/><span class="span-for-pnumber"></span>
+			<div class="title for-upwd" >密码</div>
+			<input type="password" name="upwd" class="upwd all-input" placeholder="请填写8-16位以内密码"/><span class="span-for-upwd"></span>
+			<div class="title for-checkpwd">确认密码</div>
+			<input type="password" class="checkpwd all-input"/><span class="span-for-checkpwd"></span>
+			<input type="button" class="btn btn-upload" value="选择头像"/>
+			<input type="button" class="btn btn-register" value="注册"/>
+		</form>
+	</div>
+	<div class="mid-one">
+		<button type="button" class="btn btn-takePicture">拍照上传</button>
+		<button type="button" class="btn btn-chosePicture">选择头像</button>
+		<button type="button" class="btn btn-dragUpload">拖拽上传</button>
+		<button type="button" class="btn btn-back">返回</button>
+	</div>
+	<div class="mid-one">
+		<video id="video" autoplay class="video video-show"></video>
+		<canvas id="avatar" class="video"></canvas>
+		<button type="button" class="btn shutter">拍照</button>
+		<button type="button" class="btn drop-photograph">返回</button>
+		<button type="button" class="btn-confirm hidden">确认</button>
+		<button type="button" class="btn-swat hidden">取消</button>
+	</div>
+	<div class="mid-one">
+		<div class="avatar-container" style="top:5%;left:3px;">
+			<img src="./img/1.jpg" class="avatar"/>
+		</div>
+		<div class="avatar-container" style="top:5%;left:129px;">
+			<img src="./img/2.jpg" class="avatar"/>
+		</div>
+		<div class="avatar-container" style="top:5%;left:255px;">
+			<img src="./img/3.jpg" class="avatar"/>
+		</div>
+		<div class="avatar-container" style="top:33%;left:3px;">
+			<img src="./img/4.jpg" class="avatar"/>
+		</div>
+		<div class="avatar-container" style="top:33%;left:129px;">
+			<img src="./img/5.jpg" class="avatar"/>
+		</div>
+		<div class="avatar-container" style="top:33%;left:255px;">
+			<img src="./img/6.jpg" class="avatar"/>
+		</div>
+		<button type="button" class="avatar-confirm">确认</button>
+		<button type="button" class="avatar-cancel">取消</button>
+	</div>
+	<div class="mid-one">
+		<div class="drag-upload">请将图片拖拽至此区域（2M以内）</div>
+		<div class="drag-show">图片预览区域</div>
+		<canvas id="drag"   width="300" height="200" style="display:none"></canvas>
+		<button class="btn btn-drag-confirm">确认</button>
+		<button class="btn btn-drag-cancel">取消</button>
+	</div>
+	<div class="page-bottom">
+		<img src="img/logo_01.png" class="bottom-logo">
+	</div>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/jquery.form.js"></script>
+	<script src="js/register.js"></script>
+	<script src="js/star.js"></script>
+	-
+	<script>
+
+	</script>
+</body>
+</html>
