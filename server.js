@@ -1,10 +1,14 @@
-const http=require('http');
+const https=require('https');
 const url=require('url');
 const fs=require('fs');
 const postHandle=require('./postHandle.js');
 const zlibHandle=require('./zlibHandle');
+const path=require("path")
 
-http.createServer((req,res)=>{
+var pk = fs.readFileSync(path.join(__dirname,"./public/myserver.key"));
+var pc = fs.readFileSync(path.join(__dirname,"./public/myserver.certificate.pem"));
+var options = {key:pk,cert:pc};
+https.createServer(options,(req,res)=>{
 	//处理get请求
     if(req.method=='GET'){
         let fname=url.parse(req.url).pathname;
